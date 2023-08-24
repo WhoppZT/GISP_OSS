@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gisp</title>
+    <link rel="icon" href="/logo/WhatsApp Image 2023-07-05 at 11.46.36 AM.jpeg">
+    <link rel="stylesheet" href="proyecto estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+</head>
+<body>
+    <section class="dark">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="file:///E:/Pagina%20Proyecto/logo/logo%20gisp.jpeg" alt="Gisp" style="width: 50px; height: 50px; border-radius: 50%;">
+                <h1>GISP</h1>
+                </a>  
+            </div>
+            <ul>
+            <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Novedades</a></li>
+                </ul>
+            <div class="icono-timbre">
+                <a href="#"><i class="fi fi-bs-bell"></i></a>
+            </div>
+            <div class="iconos-config">
+                <div class="darkmode">
+                    <div class="light fa fa-sun"></div>
+                    <div class="dark fa fa-moon"></div>
+                  </div>
+                <a href="file:///E:/Pagina%20Proyecto/Perfil-card.html"><i class="perfil fi fi-rr-user"></i><p>Perfil</p></a>
+                <a href="#"><i class="fi fi-rs-settings"></i></a>
+            </div>  
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div class="search">
+                <i class="fi fi-br-search" style="color: black;"></i><input type="search" placeholder="Buscar..."> 
+            </div>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.9385397419765!2d-72.50586998974629!3d7.901490105585948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e66456e853423bd%3A0x6bd4a033f6ad90de!2sSENA!5e0!3m2!1ses!2sco!4v1688766458365!5m2!1ses!2sco" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="gisp">
+            <ul>
+                <li><a href="#" style="color: red;">Politica de privacidad</a></li>
+                <li><a href="#">Soporte tecnico</a></li>
+                </ul>
+            <div style="display: flex; margin-top: 4rem;"><img src="file:///E:/Pagina%20Proyecto/logo/img%20c.png" alt="" style="width: 15px; height: 15px;"><p>GISP</p></div>
+        </div>
+        <div class="contactos">
+            <p>Contactanos</p>
+            <i class="fi fi-ts-book-user"><a href="#" style="color: blue;">example123@gmail.com</a></i>
+            <img src="file:///E:/Pagina%20Proyecto/logo/logo%20gisp.jpeg" alt="Gisp" style="width: 50px; height: 50px; border-radius: 50%; margin: auto;">
+        </div>
+        <div class="app-movil">
+            <p>Nuestra app movil</p>
+            <a href="#"><i class="fa-brands fa-google-play"></i></a>
+            <a href="#"><i class="fi fi-brands-app-store-ios"></i></a>
+        </div>
+    </footer>
+    </section>
+    <script>
+
+        $(".darkmode").click(function(){
+	$("body").toggleClass("dark")
+		.css( //3
+			$("body").hasClass("dark") ?
+		  	{background:"#000000", color:"#f9f9f9"} : {background:"#f9f9f9", color:"#202225"}
+		);
+});
+
+    </script>
+
+</body>
+</html>

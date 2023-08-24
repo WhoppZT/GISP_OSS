@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    background: #5e90a3;
+}
+.logo a{
+    display: flex;
+    font-size: 8px;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    font-size: 20px;
+    margin-top: 10px;
+}
+nav li:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+nav li a:hover{
+    color: azure;
+}
+.icono-timbre{
+   margin-top: 15px;
+   font-size: 20px;
+}
+body div.darkmode {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem 1rem 0.75rem 1rem;
+    cursor: pointer;
+  }
+  
+  body.dark .darkmode .light,
+  body:not(.dark) .darkmode .dark {
+    display: none;
+  }
+  .fa{
+    cursor: pointer;
+  }
+  
+.iconos-config{
+    display: grid;
+    margin-left: 40rem;
+    grid-template-columns: repeat(3, 4rem);
+    margin-top: 10px;
+    font-size: 20px;
+}
+.perfil{
+    border: solid black;
+    border-radius: 20px;
+    padding: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.search{
+    border: black solid;
+    margin-left: 35rem;
+    position: absolute;
+    padding: 15px;
+    border-radius: 30px;
+    width: 25rem;
+    margin-top: 15px;
+    background: white;
+}
+.search input{
+    height: 25px;
+    width: 90%;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    margin-top: 0px;
+    font-size: 18px;
+    color: black;
+}
+.search .fi-br-search{
+    font-size: 15px;
+    color: black;
+}
+footer{
+    background: #5e90a3;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.gisp{
+    display: flex;
+    margin-top: 10px;
+    font-size: 12px;
+    flex-direction: column;
+}
+.contactos{
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+    font-size: 17px;
+    line-height: 2;
+    border-left: 1px black solid;
+}
+.app-movil{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-left: 1px black solid;
+    margin-left: 40px;
+}
+.app-movil p{
+    margin-left: 5rem;
+}
+.app-movil a{
+    margin-left: 5rem;
+    font-size: 2rem;
+}

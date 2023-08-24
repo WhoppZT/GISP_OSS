@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #ff9472, #f2709c);
+    color: rgb(34, 34, 34);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 320px;
+    height: 340px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.13);
+    align-items: start;
+    cursor: pointer;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top: 2%;
+    width: 95%;
+    height: 120px;
+    z-index: 1;
+    border-radius: 10px 10px 0 0;
+    background: #121212;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.13);
+    transform-origin: bottom;
+    transition: transform .4s;
+    margin-left: 8px;
+}
+.card:hover:before{
+    transform: translateY(-5px) scaleY(1.2);
+}
+.card .img{
+  z-index: 10;
+  overflow: hidden;
+  transform: translateY(50px);
+  border: #fff 10px solid;
+  border-radius: 50%;
+  position: relative;
+  background: #fff;
+  width: 120px;
+  height: 120px;
+  margin-left: 45px;
+}
+.Content{
+    width: 100%;
+    height: 100%;
+    transform: translatex(10px);
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Content h2{
+    font-size: 45px;
+}
+.btn{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transform: translatey(50px);
+    background: #ff9472;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 0 20px rgb(0 0 0 / 13%);
+    cursor: pointer;
+    margin-left: 12px;
+}
